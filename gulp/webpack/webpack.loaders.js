@@ -8,7 +8,7 @@ var loaders = {}
 
 loaders.js = {
   test: /\.js$/i,
-  include: [path.resolve(config.src), path.resolve('./node_modules/vux')],
+  //include: [path.resolve(config.src), path.resolve('./node_modules/vux')],
   loader: 'babel'
 }
 
@@ -50,7 +50,7 @@ loaders.i18n = {
 
 loaders.vue = {
   test: /\.vue$/i,
-  include: [path.resolve(config.src), path.resolve('./node_modules/vux')],
+  include: [path.resolve(config.src), path.resolve('./node_modules/')],
   loader: 'vue',
 }
 

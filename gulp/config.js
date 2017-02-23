@@ -3,13 +3,20 @@ import { debug, production } from './helpers/getArg'
 var src = './src'
 
 export default {
-  vueEntryConfig:{
-    src:src,
-    vueLibBuildIn:true,
+  vueEntryConfig: {
+    src: src,
+    vueLibBuildIn: true,
     components: './src/components',
     pages: './src/pages',
-    langs:["zh_CN"],
-    plugins:[]
+    langs: ["zh_CN"],
+    plugins: [{
+      name: 'mobile',
+      options: {
+        designWidth: 320,
+        designHeight: 568,
+        designFontSize: 17
+      }
+    }]
   },
   src: src,
   dest: './dist',

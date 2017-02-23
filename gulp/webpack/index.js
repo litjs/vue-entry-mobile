@@ -49,9 +49,10 @@ let webpackConfig = {
         }
       }),
       px2rem({
-        rootValue: 20,
+        rootValue: 17,
         propBlackList: []
-      })]
+      })
+    ]
   },
 
   plugins: plugins,
